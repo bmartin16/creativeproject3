@@ -7,7 +7,7 @@
         <p>Made in {{shirt.country}}</p>
       </div>
       <div class="image">
-        <img :src="'/images/products/'+shirt.img">
+        <img :src="'/images/Products/'+shirt.img">
       </div>
       <div class="price">
         <h2>{{shirt.price}}</h2>
