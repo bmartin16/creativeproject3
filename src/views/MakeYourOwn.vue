@@ -6,7 +6,7 @@
       </div>
       <div class="image">
         <img v-if="this.$root.$data.color == ''" src='/images/Products/black.jpg'>
-        <img v-else :src="'/images/products/'+this.$root.$data.color">
+        <img v-else :src="'/images/Products/'+this.$root.$data.color">
         <div class="forms">
           <div class="color-buttons">
             <button type="button" v-on:click="blueShirt" class="btn btn-primary">Blue</button>

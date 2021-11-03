@@ -8,7 +8,7 @@
       </div>
       <div class="image">
         <button v-on:click="previousShirt" id = "leftArrow"><img id = "leftArrow" src='/images/leftArrow.jpg'></button>
-        <img :src="'/images/products/'+shirt.img">
+        <img :src="'/images/Products/'+shirt.img">
         <button v-on:click="nextShirt" id = "rightArrow"><img id = "rightArrow" src='/images/RightArrow.jpg'></button>
       </div>
       <div class="price">
