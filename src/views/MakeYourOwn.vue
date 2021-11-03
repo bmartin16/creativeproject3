@@ -15,7 +15,7 @@
             <button type="button" v-on:click="whiteShirt" class="btn btn-light">White</button>
             <button type="button" v-on:click="blackShirt" class="btn btn-dark">Black</button>
           </div>
-          <form class="pure-form">
+          <form onsubmit = "event.preventDefault(); myValidation();" class="pure-form">
             <h3>Shirt Text</h3>
             <input v-model="shirtNameText" />
           </form>
@@ -61,7 +61,6 @@ export default {
       img: this.$root.$data.color,
       }
       this.$root.$data.cart.push(shirt);
-      console.log(this.$root.$data.cart);
     }
   },
 }
