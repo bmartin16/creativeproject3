@@ -87,8 +87,9 @@ export default {
 
 .shirt img {
   border: 2px solid #333;
-  height: 350px;
-  width: 300px;
+  height: 20%;
+  width: 20%;
+  margin-right: 20px;
   object-fit: cover;
 }
 

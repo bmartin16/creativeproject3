@@ -7,8 +7,8 @@
         <p>Made in {{shirt.country}}</p>
       </div>
       <div class="image">
-        <button v-on:click="previousShirt" id = "leftArrow"><img id = "leftArrow" src='/images/leftArrow.jpg'></button>
-        <img :src="'/images/Products/'+shirt.img">
+        <button v-on:click="previousShirt" id = "leftArrow"><img id = "leftArrow" src='/images/LeftArrow.jpg'></button>
+        <img id="shirtPic" :src="'/images/Products/'+shirt.img">
         <button v-on:click="nextShirt" id = "rightArrow"><img id = "rightArrow" src='/images/RightArrow.jpg'></button>
       </div>
       <div class="price">
@@ -121,16 +121,19 @@ button {
 .auto {
   margin-left: auto;
 }
+#shirtPic {
+  margin-left: 10px;
+}
 #leftArrow {
   background-image: url("/images/LeftArrow.jpg");
-  width: 20%;
-  height: 20%;
+  width: 80px;
+  height: 80px;
   background: #fff;
   border: none;
 }
 #rightArrow {
-  width: 20%;
-  height: 20%;
+  width: 80px;
+  height: 80px;
   background: white;
   border: none;
 }
